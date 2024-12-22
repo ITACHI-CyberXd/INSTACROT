@@ -8,11 +8,11 @@ try:
 except(Exception, KeyboardInterrupt) as e:
     try:
         from urllib.parse import quote
-        __import__('os').system(f'xdg-open https://wa.me/6285767630210?text=BANNER%20ERROR%20%3A%20{quote(str(e))}')
+        __import__('os').system(f'xdg-open https://wa.me/6285658986563?text=BANNER%20ERROR%20%3A%20{quote(str(e))}')
         exit()
     except(Exception, KeyboardInterrupt) as e:
         from urllib.parse import quote
-        __import__('os').system(f'xdg-open https://wa.me/6285767630210?text=BANNER%20ERROR%20%3A%20{quote(str(e))}')
+        __import__('os').system(f'xdg-open https://wa.me/6285658986563?text=BANNER%20ERROR%20%3A%20{quote(str(e))}')
         exit()
 
 class Terminal:
@@ -26,25 +26,23 @@ class Terminal:
     def Banner_Facebook(self):
         self.clear_terminalize()
         Console(width = 65, style = f"{style_terminal}").print(Panel("""[red] ●[yellow] ●[green] ●[red]  
-                                                              
-  .----..--.   .---. .----..----.  .----.  .----. .-. .-.
-  | {_ / {} \ /  ___}| {_  | {}  }/  {}  \/  {}  \| |/ / 
-  [white]| | /  /\  \\     }| {__ | {}  }\      /\      /| |\ \ 
-  `-' `-'  `-' `---' `----'`----'  `----'  `----' `-' `-'                                                  
-  [grey50]AUTHOR : [green]ArifSensei [grey50]|| VERSION : [green]2.0[grey50] || STATUS : [green]PREMIUM
-    """, title = "[white]• [green]Banner Facebook[white] •"))
+ ____  _  _  ___  ____   __       ____  ____   ___ 
+[green](_  _)( \( )/ __)(_  _) /__\  ___( ___)(  _ \ / __)
+[yellow] _)(_  )  ( \__ \  )(  /(__)\(___))__)  ) _ <( (__ 
+[green](____)(_)\_)(___/ (__)(__)(__)   (__)  (____/ \___)
+[red] ●[yellow] ●[green] ●[red]  
+    """, title = "[white]• [green]ArifXeyracode[white] •"))
         return (True)
         
     def Banner_Instagram(self):
         self.clear_terminalize()
         Console(width = 65, style = f"{style_terminal}").print(Panel("""[red] ●[yellow] ●[green] ●[red]          
-
-.-..-. .-. .----..---.  .--.   .---. .----.   .--.  .-.   .-.
-| ||  `| |{ {__ {_   _}/ {} \ /   __}| {}  } / {} \ |  `.'  |
-[white]| || |\  |.-._} } | | /  /\  \\  {_ }| .-. \/  /\  \| |\ /| |
-`-'`-' `-'`----'  `-' `-'  `-' `---' `-' `-'`-'  `-'`-' ` `-'                                                   
-  [grey50]AUTHOR : [green]ArifSensei [grey50]|| VERSION : [green]2.0[grey50] || STATUS : [green]PREMIUM
-    """, title = "[white]• [green]Banner Instagram[white] •"))
+ ____  _  _  ___  ____   __       ____  ____   ___ 
+[green](_  _)( \( )/ __)(_  _) /__\  ___( ___)(  _ \ / __)
+[yellow] _)(_  )  ( \__ \  )(  /(__)\(___))__)  ) _ <( (__ 
+[green](____)(_)\_)(___/ (__)(__)(__)   (__)  (____/ \___)
+[red] ●[yellow] ●[green] ●[red]  
+    """, title = "[white]• [green]ArifXeyracode[white] •"))
         return (True)
        
     def Layar_Terminal(self):
