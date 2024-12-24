@@ -20,9 +20,9 @@ pip install pytz
 
 pip install faker
 
-git clone https://github.com/ITACHI-CyberXd/INSTAPREM
+git clone https://github.com/Lorditcahiuciha/IBF
 
 
-cd INSTAPREM
+cd IBF
 
-python Run.py
+python Premium.py
