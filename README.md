@@ -10,7 +10,7 @@ pip install bs4
 
 pip install rich
 
-pip install stfiomask
+pip install stdiomask
 
 pip install pycryptodomex
 
