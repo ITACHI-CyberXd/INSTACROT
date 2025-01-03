@@ -243,7 +243,7 @@ class Login:
                      }))
                     wr.close()
                 Requ().follow_cookies(cookies)
-                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Selamat Datang [green]{self.username}[grey50]/[green]{self.fullname}[grey50], Run Ulang Perintahnya [green]python Run.py", title = f"[white]• [green]Success [white]•"))
+                Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Selamat Datang [green]{self.username}[grey50]/[green]{self.fullname}[grey50], Run Ulang Perintahnya [green]python Premium.py", title = f"[white]• [green]Success [white]•"))
                 exit()
             else:
                 Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Opss, Anda Tidak Memasukan Apapun, Harap Masukan '[green]Cookie Instagram[grey50]'", title = f"[white]• [red]Error Not Found [white]•"))
@@ -333,7 +333,7 @@ class Login:
                          }))
                         wr.close()
                    Requ().follow_cookies(cookies)
-                   Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Selamat Datang [green]{self.username}[grey50]/[green]{self.fullname}[grey50], Run Ulang Perintahnya [green]python Run.py", title = f"[white]• [green]Success [white]•"))
+                   Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Selamat Datang [green]{self.username}[grey50]/[green]{self.fullname}[grey50], Run Ulang Perintahnya [green]python Premium.py", title = f"[white]• [green]Success [white]•"))
                    exit()
                else:
                    Console(width = 65, style = f"{style_terminal}").print(Panel(f"[grey50]Opss, Tidak Dapat Mengakses Cookie Anda Perkiraan Akun [yellow]Chekpoint[grey50] Atau [red]Invalid[grey50], Silakan Chek Akun Anda Atau Ganti Tumbal Lain", title = f"[white]• [red]Error Not Found [white]•"))
