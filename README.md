@@ -20,9 +20,9 @@ pip install pytz
 
 pip install faker
 
-git clone https://github.com/Lorditcahiuciha/IBF
+git clone https://github.com/NCEKVN/IGC
 
 
-cd IBF
+cd IGC
 
 python Premium.py
